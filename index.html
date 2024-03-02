@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess game</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 45px;
+        color: blue;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 10px;
+    }
+    .green{
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 20px;
+        text-transform: capitalize;
+        text-align: justify;
+        color: green;
+    }
+    .yellow{
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 20px;
+        text-transform: capitalize;
+        text-align: justify;
+        color: yellow;
+    }
+    .red{
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 20px;
+        text-transform: capitalize;
+        text-align: justify;
+        color: red;
+    }
+</style>
+<body>
+    <h2>JS Assignment 7: Task 7</h2>
+    <h2>Guess game</h2>
+
+
+
+
+    <script>
+        var input =+prompt("Enter a secret number (ranging from 1 to 10)")
+        var a = input
+        var secret = 2
+
+        if(a == secret){
+            document.write(`<h1 class="green">Bingo! Correct answer</h1>`)
+            
+        }
+        else if(a == ++secret){
+            document.write(`<h1 class="yellow">Close enough to the correct answer</h1>`)
+        }
+        else if(a != secret++){
+            document.write(`<h1 class="red">Try again.</h1>`)
+        }
+    </script>
+</body>
+</html>
